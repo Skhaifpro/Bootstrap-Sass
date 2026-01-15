@@ -1,5 +1,11 @@
-$primary :  #d4a574; /*couleur bouton*/
-$secondary : #4f3351; /*couleur au dessus du fond opaque*/
-$accent : #f4d4a8; /*border*/
-$dark: #2d1b3d; /*couleur fond*/
-$white:#ffffff; /*texte*/
+$primary: #d4a574;
+$secondary: #8b5a8e;
+$accent: #f4d4a8;
+$dark: #2d1b3d;
+$white: #ffffff;
+
+// Gradient pour effet shimmer
+$gradient-shimmer: linear-gradient(90deg, 
+    rgba(224, 192, 156, 0) 0%, 
+    rgb(224, 192, 156) 50%, 
+    rgba(224, 192, 156, 0) 100%);

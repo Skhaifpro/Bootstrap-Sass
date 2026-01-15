@@ -1,0 +1,9 @@
+@mixin neon($color, $accent) {
+text-shadow:
+    0 0 10px $color,
+    0 0 20px $color,
+    0 0 30px $accent,
+    0 0 40px $accent;
+}
+
+

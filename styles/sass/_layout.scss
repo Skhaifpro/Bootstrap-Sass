@@ -1,5 +1,5 @@
-body {
-    background-color:$dark;
+body, nav {
+    background-color:$gradient-shimmer;
     color: $white;
 }
 
@@ -11,7 +11,17 @@ h3 {
     color:$accent
 }
 
-button {
-    background-color: $secondary;
+.card{
+    background-color: $dark;
+    border-radius: 2px;
+    overflow: hidden;
+    max-width: 21rem; /* ← Limite à 21rem sur grands écrans */
+    transition: transform 0.2s;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 

@@ -1,10 +1,18 @@
 
 body {
-    font: 0.938rem / 23px Montserrat, sans-serif;
+    font-family: Montserrat, sans-serif;
+    font-size: 0.938rem;
+    color: $white;
 }
 
 .titles {
     font-family: "Tinos", serif;
     font-weight: 400;
     font-style: normal;
+    color: $primary;
+    text-shadow: 
+        0 0 10px rgba($accent),
+        0 0 20px rgba($accent),
+        0 0 30px rgba($accent);
 }
+

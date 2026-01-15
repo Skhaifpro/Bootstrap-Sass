@@ -1,0 +1,44 @@
+
+.btn {
+  position: relative;
+  overflow: hidden; // obligatoire pour cacher l’animation
+  cursor: pointer;
+  border: 1px solid;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-0.625rem);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: $accent;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.4s ease;
+    z-index: 0;
+  }
+
+  span {
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+  }
+
+  &:hover::before {
+    transform: scale(1.5);
+  }
+
+  &.btn-primary {
+    background-color: $dark;
+    border-color: $accent;
+    color: $accent;
+
+    &:hover {
+      color: $dark;
+    }
+  }
+}
+
